@@ -1,0 +1,67 @@
+.smartphone {
+  position: relative;
+  width: 280px;
+  height: 500px;
+  margin: auto;
+  margin-top: 16px;
+  border: 5px rgb(0, 0, 0) solid;
+  border-top-width: 20px;
+  border-bottom-width: 30px;
+  border-radius: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+/* The horizontal line on the top of the device */
+.smartphone:before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 5px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #000000;
+  border-radius: 0px;
+}
+
+/* The circle on the bottom of the device */
+.smartphone:after {
+  content: '';
+  display: block;
+  width: 35px;
+  height: 10px;
+  position: fixed;
+  left: 50%;
+  bottom: -65px;
+  transform: translate(-50%, -50%);
+  background: #000000;
+  border-radius: 50%;
+}
+
+/* The screen (or content) of the device */
+.smartphone .content {
+  position:absolute;
+  width: 280px;
+  max-height: 450px;
+}
+
+.smartphone::-webkit-scrollbar-track
+{
+	/* -webkit-box-shadow: */
+	background-color: #232323;
+}
+
+.smartphone::-webkit-scrollbar
+{
+	width: 2px;
+	background-color: #000000;
+}
+
+.smartphone::-webkit-scrollbar-thumb
+{
+	background-color: #909090;
+	border: 0
+}
+
